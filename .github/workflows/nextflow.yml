@@ -1,0 +1,29 @@
+name: Nextflow CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  test-pipeline:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+
+    - name: Setup Java
+      uses: actions/setup-java@v4
+      with:
+        distribution: 'temurin'
+        java-version: '11'
+
+    - name: Install Nextflow
+      run: |
+        curl -s https://get.nextflow.io | bash
+        sudo mv nextflow /usr/local/bin/
+
+    - name: Run Nextflow pipeline
+      run: nextflow run test.nf
