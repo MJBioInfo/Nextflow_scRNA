@@ -26,4 +26,4 @@ jobs:
         sudo mv nextflow /usr/local/bin/
 
     - name: Run Nextflow pipeline
-      run: nextflow run test.nf
+      run: nextflow run ./test.nf
