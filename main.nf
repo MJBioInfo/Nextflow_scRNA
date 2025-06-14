@@ -17,8 +17,8 @@ Input Directories
 */
 
 params.data_dir = 'data'
-params.control_dir = "/Users/majeedjamakhani/MJ-IMM/Personal/Learn-update/Workflow-learn/Nexflow-learn/data/control"
-params.treatment_dir = "/Users/majeedjamakhani/MJ-IMM/Personal/Learn-update/Workflow-learn/Nexflow-learn/data/stim_treatment"
+params.control_dir = "data/control"
+params.treatment_dir = "data/stim_treatment"
 
 
 
@@ -48,6 +48,9 @@ data_ch = Channel.fromPath(params.data_dir , checkIfExists: true)
 
 control_ch = Channel.fromPath(params.control_dir, checkIfExists: true)
 treatment_ch = Channel.fromPath(params.treatment_dir, checkIfExists: true)
+
+
+
 /*
 =================================================================================================
 Include Modules

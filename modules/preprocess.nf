@@ -37,7 +37,9 @@ process PREPROCESS {
 
     preprocessed_object <- preprocessed_object %>% NormalizeData() %>% FindVariableFeatures() %>% ScaleData() %>% RunPCA() %>% FindNeighbors() %>% FindClusters() %>% RunUMAP(dims = 1:10)
     
-    
+    # Add some metadata
+
+    preprocessed_object[["cells"]] <- preprocessed_object[["orig.ident"]]
 
 
     # Plot accroding to UMAP with orig.ident or sample name
