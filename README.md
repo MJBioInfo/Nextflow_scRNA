@@ -1,3 +1,8 @@
+## CI/CD Status
+
+![Nextflow CI](https://github.com/MJBioInfo/Nextflow_scRNA/actions/workflows/nextflow.yml/badge.svg)
+
+
 # Nextflow_scRNA
 
 This repository contains a **Nextflow pipeline** for preprocessing and analyzing single-cell RNA-seq (scRNA-seq) data using tools like Seurat and Scanpy.
