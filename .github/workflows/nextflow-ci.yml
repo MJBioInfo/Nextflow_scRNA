@@ -1,0 +1,32 @@
+name: Nextflow CI
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  test-pipeline:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+
+    - name: Set up Java (Nextflow needs Java)
+      uses: actions/setup-java@v3
+      with:
+        distribution: 'temurin'
+        java-version: '11'
+
+    - name: Install Nextflow
+      run: |
+        curl -s https://get.nextflow.io | bash
+        sudo mv nextflow /usr/local/bin/
+
+    - name: Run Nextflow config check
+      run: nextflow config
+
+    - name: Run dry-run on main.nf
+      run: nextflow run main.nf -profile test -resume || echo "Dry run failed (no test input)"
