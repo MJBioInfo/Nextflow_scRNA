@@ -1,3 +1,48 @@
+# Nextflow_scRNA
+
+This repository contains a **Nextflow pipeline** for preprocessing and analyzing single-cell RNA-seq (scRNA-seq) data using tools like Seurat and Scanpy.
+
+## 📦 Features
+
+- Quality control of raw scRNA-seq data
+- Doublet detection and filtering
+- Normalization and scaling
+- Dimensionality reduction (PCA, UMAP)
+- Clustering and marker gene identification
+
+## ⚙️ Requirements
+
+- [Nextflow](https://www.nextflow.io/) ≥ 22.04.0
+- Docker or Singularity (optional but recommended)
+- Conda (if you're using environments)
+- Git, Bash, and internet access
+
+## 🚀 Usage
+
+Clone the repo and run:
+
+```bash
+nextflow run main.nf --sample_folder data/control
+
+
+Nextflow_scRNA/
+├── data/                 # Raw input files (10x-style)
+├── modules/              # Workflow submodules
+├── results/              # Output directory
+├── main.nf               # Main workflow script
+└── nextflow.config       # Config file
+
+🔧 CI/CD Integration
+This project uses GitHub Actions to:
+
+Lint and test the pipeline
+
+Validate nextflow.config
+
+Run test data
+
+-------------------------------------------------------------------------------------------
+
 🔬 Single-Cell RNA-seq Workflow using Nextflow + Docker
 A reproducible pipeline for analyzing single-cell RNA sequencing (scRNA-seq) data using Nextflow and Docker, featuring Seurat for data processing.
 
