@@ -11,7 +11,7 @@ process DEG_ANALYSIS {
     path("*")
     
 
-    path("pb_markers.rds") , emit : pb.markers
+    path("pb_markers.rds") , emit : pb_markers
     path("pb_top10_heatmap.png")
 
     script:
@@ -24,20 +24,23 @@ process DEG_ANALYSIS {
     seurat_obj <- readRDS("${preprocessed_object}")
 
     # Find markers
-    pb.markers <- FindAllMarkers(seurat_obj, only.pos = TRUE, test.use = "wilcox")
+    pb_markers <- FindAllMarkers(seurat_obj, only.pos = TRUE, test.use = "wilcox")
 
     # Save marker table
-    saveRDS(pb.markers, "pb_markers.rds")
+    saveRDS(pb_markers, "pb_markers.rds")
 
-    # Filter top 10 genes per cluster with avg_log2FC > 1
-    top10 <- pb.markers %>%
-      group_by(seurat_clusters) %>%
-      filter(avg_log2FC > 1) %>%
-      slice_head(n = 10) %>%
-      ungroup()
+    # Add gene column from rownames
+    top10 <- pb_markers %>%
+    rownames_to_column(var = "gene") %>%
+    group_by(seurat_clusters) %>%
+    filter(avg_log2FC > 1) %>%
+    slice_head(n = 10) %>%
+    ungroup()
 
     # Generate heatmap
-    heatmap_plot <- DoHeatmap(seurat_obj, features = top10$gene) + NoLegend()
+    heatmap_plot <- DoHeatmap(seurat_obj, features = top10\$gene) + NoLegend()
     ggsave("pb_top10_heatmap.png", plot = heatmap_plot)
+    
     """
+
 }
