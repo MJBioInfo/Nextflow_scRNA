@@ -2,7 +2,6 @@
 
 ![Nextflow CI](https://github.com/MJBioInfo/Nextflow_scRNA/actions/workflows/nextflow.yml/badge.svg)
 
-
 # Nextflow_scRNA
 
 This repository contains a **Nextflow pipeline** for preprocessing and analyzing single-cell RNA-seq (scRNA-seq) data using tools like Seurat and Scanpy.
@@ -67,25 +66,30 @@ Nextflow_scRNA/
 🧰 Prerequisites
 1. Install Homebrew
 
-````
+```
 
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
-````
+```
 
 2. Install Nextflow
 
 
-````
+```
+
 # Using Homebrew
+
 brew install nextflow
 
 # Or using SDKMAN
+
 curl -s https://get.sdkman.io | bash
+
 source "$HOME/.sdkman/bin/sdkman-init.sh"
+
 sdk install nextflow
 
-````
+```
 
 3. Docker Desktop Setup
 Download from Docker Desktop for Mac
@@ -96,58 +100,91 @@ Add: Nextflow_scRNA
 Navigate to Project
 
 
-````
+```
 
 cd /Users/majeedjamakhani/MJ-IMM/Personal/Learn-update/Workflow-learn/Nextflow_scRNA
 
-````
+```
 
 
 4. Execute Workflow
 
-`````
+```
 
 # Using Docker (Apple Silicon)
+
 nextflow run main.nf -profile docker --docker-options "--platform linux/amd64"
 
 # Using Conda
+
 nextflow run main.nf -profile conda
 
 `````
 
 5. ⚙️ Configuration Details
-Docker Settings
-Image: majeedjamakhani/sc_gimm_nxt:sc--9805fdd00427d207
-Seurat: satijalab/seurat:5.0.0
-Conda Settings
-Environment: my_r_env
-Enabled Features
-conda.enabled = true
-docker.enabled = true
-🧪 Troubleshooting
 
+Docker Settings
+
+Image: majeedjamakhani/sc_gimm_nxt:sc--9805fdd00427d207
+
+Seurat: satijalab/seurat:5.0.0
+
+Conda Settings
+
+Environment: my_r_env
+
+Enabled Features
+
+conda.enabled = true
+
+docker.enabled = true
+
+🧪 Troubleshooting
 
 6. Mount Issues
 
-````
+```
 
 # Error: "Mounts denied: The path ... is not shared from the host"
 # Solution: Add path in Docker Desktop → Settings → Resources → File Sharing
 
-````
+```
 
 7. Platform Compatibility
 
-````
+```
 # Warning: Platform mismatch (linux/amd64 vs linux/arm64/v8)
 # Solution: Use platform flag
 nextflow run main.nf -profile docker --docker-options "--platform linux/amd64"
 
-````
+```
 
 👨‍🔬 Author
+
 Dr. Majeed Jamakhani
+
 GIMM Research, Portugal
 
 📄 License
+
 Academic/research use only. Contact author for other uses.
+
+
+
+## Example Usage :
+
+
+
+---
+
+Here I provide an example to run 
+
+```py
+import scanpy as sc
+import pandas as pd
+
+adata = read_h5ad(" Path to file ")
+print(adata)
+
+```
+
