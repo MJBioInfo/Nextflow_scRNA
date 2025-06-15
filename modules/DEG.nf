@@ -32,7 +32,7 @@ process DEG_ANALYSIS {
     # Add gene column from rownames
     top10 <- pb_markers %>%
     rownames_to_column(var = "gene") %>%
-    group_by(Seurat_clusters) %>%
+    group_by(cluster) %>%
     filter(avg_log2FC > 1) %>%
     slice_head(n = 10) %>%
     ungroup()
