@@ -60,7 +60,7 @@ Include Modules
 include {OBJECT_CREATION_SS} from './modules/object_creation_ss'
 include {OBJECT_CREATION_MS} from './modules/object_creation_ms'
 include {PREPROCESS} from './modules/preprocess'
-
+include {DEG_ANALYSIS} from './modules/DEG'
 
 
 /*
@@ -74,6 +74,7 @@ workflow {
     
     OBJECT_CREATION_MS( data_ch )
     PREPROCESS( OBJECT_CREATION_MS.out.merged_object )
+    DEG_ANALYSIS(PREPROCESS.out.preprocessed_object)
 
 
         }
