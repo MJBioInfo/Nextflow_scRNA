@@ -1,105 +1,115 @@
-Jun-15 17:01:18.560 [main] DEBUG nextflow.cli.Launcher - $> nextflow run main.nf -profile docker --docker-options '--platform linux/amd64' -resume
-Jun-15 17:01:18.626 [main] DEBUG nextflow.cli.CmdRun - N E X T F L O W  ~  version 24.04.2
-Jun-15 17:01:18.637 [main] DEBUG nextflow.plugin.PluginsFacade - Setting up plugin manager > mode=prod; embedded=false; plugins-dir=/Users/majeedjamakhani/.nextflow/plugins; core-plugins: nf-amazon@2.5.2,nf-azure@1.6.0,nf-cloudcache@0.4.1,nf-codecommit@0.2.0,nf-console@1.1.3,nf-ga4gh@1.3.0,nf-google@1.13.2,nf-tower@1.9.1,nf-wave@1.4.2
-Jun-15 17:01:18.644 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Enabled plugins: []
-Jun-15 17:01:18.644 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Disabled plugins: []
-Jun-15 17:01:18.646 [main] INFO  org.pf4j.DefaultPluginManager - PF4J version 3.10.0 in 'deployment' mode
-Jun-15 17:01:18.652 [main] INFO  org.pf4j.AbstractPluginManager - No plugins
-Jun-15 17:01:18.664 [main] DEBUG nextflow.config.ConfigBuilder - Found config local: /Users/majeedjamakhani/MJ-IMM/Personal/Learn-update/Workflow-learn/Nextflow_scRNA/nextflow.config
-Jun-15 17:01:18.665 [main] DEBUG nextflow.config.ConfigBuilder - Parsing config file: /Users/majeedjamakhani/MJ-IMM/Personal/Learn-update/Workflow-learn/Nextflow_scRNA/nextflow.config
-Jun-15 17:01:18.679 [main] DEBUG n.secret.LocalSecretsProvider - Secrets store: /Users/majeedjamakhani/.nextflow/secrets/store.json
-Jun-15 17:01:18.681 [main] DEBUG nextflow.secret.SecretsLoader - Discovered secrets providers: [nextflow.secret.LocalSecretsProvider@aed0151] - activable => nextflow.secret.LocalSecretsProvider@aed0151
-Jun-15 17:01:18.687 [main] DEBUG nextflow.config.ConfigBuilder - Applying config profile: `docker`
-Jun-15 17:01:18.914 [main] DEBUG nextflow.config.ConfigBuilder - Available config profiles: [standard, conda, docker]
-Jun-15 17:01:18.930 [main] DEBUG nextflow.cli.CmdRun - Applied DSL=2 by global default
-Jun-15 17:01:18.938 [main] DEBUG nextflow.cli.CmdRun - Launching `main.nf` [fabulous_lichterman] DSL2 - revision: 5f08cc8e2d
-Jun-15 17:01:18.939 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins default=[]
-Jun-15 17:01:18.939 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins resolved requirement=[]
-Jun-15 17:01:18.963 [main] DEBUG nextflow.Session - Session UUID: 3f159c2b-e709-4878-9f98-57074ec76d4c
-Jun-15 17:01:18.964 [main] DEBUG nextflow.Session - Run name: fabulous_lichterman
-Jun-15 17:01:18.964 [main] DEBUG nextflow.Session - Executor pool size: 14
-Jun-15 17:01:18.968 [main] DEBUG nextflow.file.FilePorter - File porter settings maxRetries=3; maxTransfers=50; pollTimeout=null
-Jun-15 17:01:18.985 [main] DEBUG nextflow.cli.CmdRun - 
+Jun-15 17:03:50.549 [main] DEBUG nextflow.cli.Launcher - $> nextflow run main.nf -profile docker --docker-options '--platform linux/amd64' -resume
+Jun-15 17:03:50.613 [main] DEBUG nextflow.cli.CmdRun - N E X T F L O W  ~  version 24.04.2
+Jun-15 17:03:50.623 [main] DEBUG nextflow.plugin.PluginsFacade - Setting up plugin manager > mode=prod; embedded=false; plugins-dir=/Users/majeedjamakhani/.nextflow/plugins; core-plugins: nf-amazon@2.5.2,nf-azure@1.6.0,nf-cloudcache@0.4.1,nf-codecommit@0.2.0,nf-console@1.1.3,nf-ga4gh@1.3.0,nf-google@1.13.2,nf-tower@1.9.1,nf-wave@1.4.2
+Jun-15 17:03:50.631 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Enabled plugins: []
+Jun-15 17:03:50.632 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Disabled plugins: []
+Jun-15 17:03:50.633 [main] INFO  org.pf4j.DefaultPluginManager - PF4J version 3.10.0 in 'deployment' mode
+Jun-15 17:03:50.640 [main] INFO  org.pf4j.AbstractPluginManager - No plugins
+Jun-15 17:03:50.651 [main] DEBUG nextflow.config.ConfigBuilder - Found config local: /Users/majeedjamakhani/MJ-IMM/Personal/Learn-update/Workflow-learn/Nextflow_scRNA/nextflow.config
+Jun-15 17:03:50.652 [main] DEBUG nextflow.config.ConfigBuilder - Parsing config file: /Users/majeedjamakhani/MJ-IMM/Personal/Learn-update/Workflow-learn/Nextflow_scRNA/nextflow.config
+Jun-15 17:03:50.665 [main] DEBUG n.secret.LocalSecretsProvider - Secrets store: /Users/majeedjamakhani/.nextflow/secrets/store.json
+Jun-15 17:03:50.667 [main] DEBUG nextflow.secret.SecretsLoader - Discovered secrets providers: [nextflow.secret.LocalSecretsProvider@aed0151] - activable => nextflow.secret.LocalSecretsProvider@aed0151
+Jun-15 17:03:50.673 [main] DEBUG nextflow.config.ConfigBuilder - Applying config profile: `docker`
+Jun-15 17:03:50.896 [main] DEBUG nextflow.config.ConfigBuilder - Available config profiles: [standard, conda, docker]
+Jun-15 17:03:50.911 [main] DEBUG nextflow.cli.CmdRun - Applied DSL=2 by global default
+Jun-15 17:03:50.918 [main] DEBUG nextflow.cli.CmdRun - Launching `main.nf` [small_wright] DSL2 - revision: 5f08cc8e2d
+Jun-15 17:03:50.919 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins default=[]
+Jun-15 17:03:50.919 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins resolved requirement=[]
+Jun-15 17:03:50.945 [main] DEBUG nextflow.Session - Session UUID: 3f159c2b-e709-4878-9f98-57074ec76d4c
+Jun-15 17:03:50.945 [main] DEBUG nextflow.Session - Run name: small_wright
+Jun-15 17:03:50.945 [main] DEBUG nextflow.Session - Executor pool size: 14
+Jun-15 17:03:50.949 [main] DEBUG nextflow.file.FilePorter - File porter settings maxRetries=3; maxTransfers=50; pollTimeout=null
+Jun-15 17:03:50.970 [main] DEBUG nextflow.cli.CmdRun - 
   Version: 24.04.2 build 5914
   Created: 29-05-2024 06:19 UTC (07:19 WEST)
   System: Mac OS X 14.6.1
   Runtime: Groovy 4.0.21 on Java HotSpot(TM) 64-Bit Server VM 22.0.1+8-16
   Encoding: UTF-8 (UTF-8)
-  Process: 32978@MMOTA-MAC03 [192.168.1.222]
-  CPUs: 14 - Mem: 36 GB (5 GB) - Swap: 0 (0) - Virtual threads ON
-Jun-15 17:01:19.000 [main] DEBUG nextflow.Session - Work-dir: /Users/majeedjamakhani/MJ-IMM/Personal/Learn-update/Workflow-learn/Nextflow_scRNA/work [Mac OS X]
-Jun-15 17:01:19.008 [main] DEBUG nextflow.executor.ExecutorFactory - Extension executors providers=[]
-Jun-15 17:01:19.014 [main] DEBUG nextflow.Session - Observer factory: DefaultObserverFactory
-Jun-15 17:01:19.029 [main] DEBUG nextflow.cache.CacheFactory - Using Nextflow cache factory: nextflow.cache.DefaultCacheFactory
-Jun-15 17:01:19.034 [main] DEBUG nextflow.util.CustomPoolFactory - Creating virtual thread pool
-Jun-15 17:01:19.079 [main] DEBUG nextflow.Session - Session start
-Jun-15 17:01:19.152 [main] DEBUG nextflow.script.ScriptRunner - > Launching execution
-Jun-15 17:01:19.333 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:OBJECT_CREATION_MS` matches process OBJECT_CREATION_MS
-Jun-15 17:01:19.337 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
-Jun-15 17:01:19.337 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
-Jun-15 17:01:19.339 [main] DEBUG nextflow.executor.Executor - [warm up] executor > local
-Jun-15 17:01:19.342 [main] DEBUG n.processor.LocalPollingMonitor - Creating local task monitor for executor 'local' > cpus=14; memory=36 GB; capacity=14; pollInterval=100ms; dumpInterval=5m
-Jun-15 17:01:19.343 [main] DEBUG n.processor.TaskPollingMonitor - >>> barrier register (monitor: local)
-Jun-15 17:01:19.369 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:PREPROCESS` matches process PREPROCESS
-Jun-15 17:01:19.370 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
-Jun-15 17:01:19.370 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
-Jun-15 17:01:19.373 [main] DEBUG nextflow.script.ScriptRunner - Parsed script files:
+  Process: 33453@MMOTA-MAC03 [192.168.1.221]
+  CPUs: 14 - Mem: 36 GB (5.3 GB) - Swap: 0 (0) - Virtual threads ON
+Jun-15 17:03:50.986 [main] DEBUG nextflow.Session - Work-dir: /Users/majeedjamakhani/MJ-IMM/Personal/Learn-update/Workflow-learn/Nextflow_scRNA/work [Mac OS X]
+Jun-15 17:03:50.993 [main] DEBUG nextflow.executor.ExecutorFactory - Extension executors providers=[]
+Jun-15 17:03:50.998 [main] DEBUG nextflow.Session - Observer factory: DefaultObserverFactory
+Jun-15 17:03:51.011 [main] DEBUG nextflow.cache.CacheFactory - Using Nextflow cache factory: nextflow.cache.DefaultCacheFactory
+Jun-15 17:03:51.015 [main] DEBUG nextflow.util.CustomPoolFactory - Creating virtual thread pool
+Jun-15 17:03:51.043 [main] DEBUG nextflow.Session - Session start
+Jun-15 17:03:51.112 [main] DEBUG nextflow.script.ScriptRunner - > Launching execution
+Jun-15 17:03:51.296 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:OBJECT_CREATION_MS` matches process OBJECT_CREATION_MS
+Jun-15 17:03:51.300 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Jun-15 17:03:51.300 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jun-15 17:03:51.303 [main] DEBUG nextflow.executor.Executor - [warm up] executor > local
+Jun-15 17:03:51.305 [main] DEBUG n.processor.LocalPollingMonitor - Creating local task monitor for executor 'local' > cpus=14; memory=36 GB; capacity=14; pollInterval=100ms; dumpInterval=5m
+Jun-15 17:03:51.306 [main] DEBUG n.processor.TaskPollingMonitor - >>> barrier register (monitor: local)
+Jun-15 17:03:51.332 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:PREPROCESS` matches process PREPROCESS
+Jun-15 17:03:51.332 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Jun-15 17:03:51.332 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jun-15 17:03:51.335 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Jun-15 17:03:51.335 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jun-15 17:03:51.336 [main] DEBUG nextflow.Session - Workflow process names [dsl2]: PREPROCESS, DEG_ANALYSIS, OBJECT_CREATION_MS, OBJECT_CREATION_SS
+Jun-15 17:03:51.337 [main] DEBUG nextflow.Session - Igniting dataflow network (6)
+Jun-15 17:03:51.339 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > OBJECT_CREATION_MS
+Jun-15 17:03:51.340 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > PREPROCESS
+Jun-15 17:03:51.340 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > DEG_ANALYSIS
+Jun-15 17:03:51.340 [main] DEBUG nextflow.script.ScriptRunner - Parsed script files:
   Script_395ccb7c250e5a78: /Users/majeedjamakhani/MJ-IMM/Personal/Learn-update/Workflow-learn/Nextflow_scRNA/main.nf
   Script_5985ae5e8bb55bc0: /Users/majeedjamakhani/MJ-IMM/Personal/Learn-update/Workflow-learn/Nextflow_scRNA/./modules/preprocess.nf
   Script_c2c8f9515ecc6f03: /Users/majeedjamakhani/MJ-IMM/Personal/Learn-update/Workflow-learn/Nextflow_scRNA/./modules/object_creation_ss.nf
+  Script_17715f96616b6f86: /Users/majeedjamakhani/MJ-IMM/Personal/Learn-update/Workflow-learn/Nextflow_scRNA/./modules/DEG.nf
   Script_5f6176f9478c1fcc: /Users/majeedjamakhani/MJ-IMM/Personal/Learn-update/Workflow-learn/Nextflow_scRNA/./modules/object_creation_ms.nf
-  Script_f6c75db331c94373: /Users/majeedjamakhani/MJ-IMM/Personal/Learn-update/Workflow-learn/Nextflow_scRNA/./modules/DEG.nf
-Jun-15 17:01:19.373 [main] DEBUG nextflow.Session - Session aborted -- Cause: Unknown variable 'pb'
-Jun-15 17:01:19.384 [Task monitor] DEBUG n.processor.TaskPollingMonitor - <<< barrier arrives (monitor: local) - terminating tasks monitor poll loop
-Jun-15 17:01:19.384 [main] ERROR nextflow.cli.Launcher - @unknown
-groovy.lang.MissingPropertyException: Unknown variable 'pb'
-	at org.codehaus.groovy.vmplugin.v8.IndyInterface.fromCache(IndyInterface.java:321)
-	at nextflow.script.ProcessConfig.getProperty(ProcessConfig.groovy:303)
-	at org.codehaus.groovy.runtime.InvokerHelper.getProperty(InvokerHelper.java:167)
-	at groovy.lang.Closure.getPropertyTryThese(Closure.java:325)
-	at groovy.lang.Closure.getPropertyDelegateFirst(Closure.java:315)
-	at groovy.lang.Closure.getProperty(Closure.java:301)
-	at org.codehaus.groovy.vmplugin.v8.IndyInterface.fromCache(IndyInterface.java:321)
-	at Script_f6c75db331c94373$_runScript_closure1.doCall(Script_f6c75db331c94373:14)
-	at Script_f6c75db331c94373$_runScript_closure1.doCall(Script_f6c75db331c94373)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:343)
-	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:328)
-	at org.codehaus.groovy.runtime.metaclass.ClosureMetaClass.invokeMethod(ClosureMetaClass.java:279)
-	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1007)
-	at groovy.lang.Closure.call(Closure.java:433)
-	at groovy.lang.Closure.call(Closure.java:412)
-	at nextflow.script.ProcessDef.initialize(ProcessDef.groovy:111)
-	at nextflow.script.ProcessDef.run(ProcessDef.groovy:169)
-	at nextflow.script.BindableDef.invoke_a(BindableDef.groovy:51)
-	at nextflow.script.ComponentDef.invoke_o(ComponentDef.groovy:40)
-	at nextflow.script.WorkflowBinding.invokeMethod(WorkflowBinding.groovy:103)
-	at org.codehaus.groovy.runtime.InvokerHelper.invokePogoMethod(InvokerHelper.java:651)
-	at org.codehaus.groovy.runtime.InvokerHelper.invokeMethod(InvokerHelper.java:628)
-	at org.codehaus.groovy.runtime.metaclass.ClosureMetaClass.invokeOnDelegationObjects(ClosureMetaClass.java:391)
-	at org.codehaus.groovy.runtime.metaclass.ClosureMetaClass.invokeMethod(ClosureMetaClass.java:330)
-	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1007)
-	at org.codehaus.groovy.vmplugin.v8.IndyInterface.fromCache(IndyInterface.java:321)
-	at Script_395ccb7c250e5a78$_runScript_closure1$_closure2.doCall(Script_395ccb7c250e5a78:77)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:343)
-	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:328)
-	at org.codehaus.groovy.runtime.metaclass.ClosureMetaClass.invokeMethod(ClosureMetaClass.java:279)
-	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1007)
-	at groovy.lang.Closure.call(Closure.java:433)
-	at groovy.lang.Closure.call(Closure.java:412)
-	at nextflow.script.WorkflowDef.run0(WorkflowDef.groovy:204)
-	at nextflow.script.WorkflowDef.run(WorkflowDef.groovy:188)
-	at nextflow.script.BindableDef.invoke_a(BindableDef.groovy:51)
-	at org.codehaus.groovy.vmplugin.v8.IndyInterface.fromCache(IndyInterface.java:321)
-	at nextflow.script.BaseScript.run0(BaseScript.groovy:198)
-	at org.codehaus.groovy.vmplugin.v8.IndyInterface.fromCache(IndyInterface.java:321)
-	at nextflow.script.BaseScript.run(BaseScript.groovy:209)
-	at nextflow.script.ScriptParser.runScript(ScriptParser.groovy:236)
-	at nextflow.script.ScriptRunner.run(ScriptRunner.groovy:243)
-	at nextflow.script.ScriptRunner.execute(ScriptRunner.groovy:138)
-	at nextflow.cli.CmdRun.run(CmdRun.groovy:372)
-	at nextflow.cli.Launcher.run(Launcher.groovy:503)
-	at nextflow.cli.Launcher.main(Launcher.groovy:657)
+Jun-15 17:03:51.340 [main] DEBUG nextflow.script.ScriptRunner - > Awaiting termination 
+Jun-15 17:03:51.340 [main] DEBUG nextflow.Session - Session await
+Jun-15 17:03:51.442 [Actor Thread 5] INFO  nextflow.processor.TaskProcessor - [62/d95ccf] Cached process > OBJECT_CREATION_MS (Creation of Seurat object for Multiple samples)
+Jun-15 17:03:51.451 [Actor Thread 10] INFO  nextflow.processor.TaskProcessor - [08/554ee9] Cached process > PREPROCESS (Preprocess of Seurat object)
+Jun-15 17:03:51.455 [Actor Thread 14] DEBUG nextflow.processor.TaskProcessor - Handling unexpected condition for
+  task: name=DEG_ANALYSIS (DEG analysis using Seurat); work-dir=null
+  error [nextflow.exception.ProcessUnrecoverableException]: Process `DEG_ANALYSIS (DEG analysis using Seurat)` script contains error(s)
+Jun-15 17:03:51.463 [Actor Thread 14] ERROR nextflow.processor.TaskProcessor - Error executing process > 'DEG_ANALYSIS (DEG analysis using Seurat)'
+
+Caused by:
+  No such variable: gene -- Check script './modules/DEG.nf' at line: 18
+
+
+Source block:
+  """
+  #!/usr/bin/env Rscript
+  library(Seurat)
+  library(tidyverse)
+  
+  # Load preprocessed Seurat object
+  seurat_obj <- readRDS("${preprocessed_object}")
+  
+  # Find markers
+  pb_markers <- FindAllMarkers(seurat_obj, only.pos = TRUE, test.use = "wilcox")
+  
+  # Save marker table
+  saveRDS(pb_markers, "pb_markers.rds")
+  
+  # Filter top 10 genes per cluster with avg_log2FC > 1
+  top10 <- pb_markers %>%
+    group_by(seurat_clusters) %>%
+    filter(avg_log2FC > 1) %>%
+    slice_head(n = 10) %>%
+    ungroup()
+  
+  # Generate heatmap
+  heatmap_plot <- DoHeatmap(pb_markers, features = top10$gene) + NoLegend()
+  ggsave("pb_top10_heatmap.png", plot = heatmap_plot)
+  """
+
+Tip: you can try to figure out what's wrong by changing to the process work dir and showing the script file named `.command.sh`
+Jun-15 17:03:51.471 [Actor Thread 14] DEBUG nextflow.Session - Session aborted -- Cause: Process `DEG_ANALYSIS (DEG analysis using Seurat)` script contains error(s)
+Jun-15 17:03:51.478 [Actor Thread 14] DEBUG nextflow.Session - The following nodes are still active:
+[process] DEG_ANALYSIS
+  status=ACTIVE
+  port 0: (queue) closed; channel: preprocessed_object
+  port 1: (cntrl) -     ; channel: $
+
+Jun-15 17:03:51.480 [main] DEBUG nextflow.Session - Session await > all processes finished
+Jun-15 17:03:51.480 [main] DEBUG nextflow.Session - Session await > all barriers passed
+Jun-15 17:03:51.480 [Task monitor] DEBUG n.processor.TaskPollingMonitor - <<< barrier arrives (monitor: local) - terminating tasks monitor poll loop
+Jun-15 17:03:51.481 [Actor Thread 19] DEBUG nextflow.processor.TaskProcessor - Handling unexpected condition for
+  task: name=DEG_ANALYSIS; work-dir=null
+  error [java.lang.InterruptedException]: java.lang.InterruptedException
+Jun-15 17:03:51.483 [main] DEBUG n.trace.WorkflowStatsObserver - Workflow completed > WorkflowStats[succeededCount=0; failedCount=0; ignoredCount=0; cachedCount=2; pendingCount=0; submittedCount=0; runningCount=0; retriesCount=0; abortedCount=0; succeedDuration=0ms; failedDuration=0ms; cachedDuration=2m 19s;loadCpus=0; loadMemory=0; peakRunning=0; peakCpus=0; peakMemory=0; ]
+Jun-15 17:03:51.684 [main] DEBUG nextflow.cache.CacheDB - Closing CacheDB done
+Jun-15 17:03:51.697 [main] DEBUG nextflow.script.ScriptRunner - > Execution complete -- Goodbye

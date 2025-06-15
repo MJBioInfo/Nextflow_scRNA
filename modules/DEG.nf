@@ -32,7 +32,7 @@ process DEG_ANALYSIS {
     # Add gene column from rownames
     top10 <- pb_markers %>%
     rownames_to_column(var = "gene") %>%
-    group_by(seurat_clusters) %>%
+    group_by(Seurat_clusters) %>%
     filter(avg_log2FC > 1) %>%
     slice_head(n = 10) %>%
     ungroup()
@@ -40,7 +40,7 @@ process DEG_ANALYSIS {
     # Generate heatmap
     heatmap_plot <- DoHeatmap(seurat_obj, features = top10\$gene) + NoLegend()
     ggsave("pb_top10_heatmap.png", plot = heatmap_plot)
-    
+
     """
 
 }
